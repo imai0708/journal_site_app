@@ -13,7 +13,7 @@
 
     @foreach ($articles as $article)
         <p>
-            <a href="articles/{{ $article->id }}">
+            <a href="/articles/{{ $article->id }}">
             {{ $article->title }}
             </a>
         </p>
