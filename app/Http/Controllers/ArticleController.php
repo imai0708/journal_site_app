@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Article;
 use Illuminate\Http\Request;
 
-class ArticController extends Controller
+class ArticleController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,7 +14,8 @@ class ArticController extends Controller
      */
     public function index()
     {
-        //
+        $articles = Article::all();
+        return view('articles.index',['articles' => $articles]);
     }
 
     /**
