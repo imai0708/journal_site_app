@@ -21,11 +21,11 @@ class Kernel extends ConsoleKernel
     /**
      * Register the commands for the application.
      *
-     * @return void
+     * @return voidcs
      */
     protected function commands()
     {
-        $this->load(__DIR__.'/Commands');
+        $this->load(__DIR__ . '/Commands');
 
         require base_path('routes/console.php');
     }
